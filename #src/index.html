@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script defer src="./js/script.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="comments">
+            <div class="comments__count">
+            </div>
+            <form class="comments__form form" action="">
+                <div class="form__name">
+                    <label class="form__label" for="first-name">Your Name</label>
+                    <input placeholder="Напишите имя" class="form__input" type="text" id="first-name" name="firstName">
+                </div>
+                <div class="form__date">
+                    <label class="form__label" for="day">Date</label>
+                    <div class="form__select-conteiner">
+                        <select class="form__select select" class="select" id="day" name="day">
+                            <option class="select__item" value="1">1</option>
+                            <option class="select__item" value="2">2</option>
+                            <option class="select__item" value="3">3</option>
+                            <option class="select__item" value="4">4</option>
+                            <option class="select__item" value="5">5</option>
+                            <option class="select__item" value="6">6</option>
+                            <option class="select__item" value="7">7</option>
+                            <option class="select__item" value="8">8</option>
+                            <option class="select__item" value="9">9</option>
+                            <option class="select__item" value="10">10</option>
+                            <option class="select__item" value="11">11</option>
+                            <option class="select__item" value="12">12</option>
+                            <option class="select__item" value="13">13</option>
+                            <option class="select__item" value="14">14</option>
+                            <option class="select__item" value="15">15</option>
+                            <option class="select__item" value="16">16</option>
+                            <option class="select__item" value="17">17</option>
+                            <option class="select__item" value="18">18</option>
+                            <option class="select__item" value="19">19</option>
+                            <option class="select__item" value="20">20</option>
+                            <option class="select__item" value="21">21</option>
+                            <option class="select__item" value="22">22</option>
+                            <option class="select__item" value="23">23</option>
+                            <option class="select__item" value="24">24</option>
+                            <option class="select__item" value="25">25</option>
+                            <option class="select__item" value="26">26</option>
+                            <option class="select__item" value="27">27</option>
+                            <option class="select__item" value="29">29</option>
+                            <option class="select__item" value="30">30</option>
+                            <option class="select__item" value="31">31</option>
+                        </select>
+                        <select class="form__select select" id="month" name="month">
+                            <option class="select__item" value="1">January </option>
+                            <option class="select__item" value="2">February</option>
+                            <option class="select__item" value="3">March</option>
+                            <option class="select__item" value="4">April</option>
+                            <option class="select__item" value="5">May</option>
+                            <option class="select__item" value="6">June</option>
+                            <option class="select__item" value="7">July</option>
+                            <option class="select__item" value="8">August</option>
+                            <option class="select__item" value="9">September</option>
+                            <option class="select__item" value="10">October</option>
+                            <option class="select__item" value="11">November</option>
+                            <option class="select__item" value="12">December</option>
+                        </select>
+                        <select class="form__select select" id="year" name="year">
+                            <option class="select__item" value="1995">1995</option>
+                            <option class="select__item" value="1996">1996</option>
+                            <option class="select__item" value="1997">1997</option>
+                            <option class="select__item" value="1998">1998</option>
+                            <option class="select__item" value="1999">1999</option>
+                            <option class="select__item" value="2001">2001</option>
+                            <option class="select__item" value="2002">2002</option>
+                            <option class="select__item" value="2003">2003</option>
+                            <option class="select__item" value="2004">2004</option>
+                            <option class="select__item" value="2005">2005</option>
+                            <option class="select__item" value="2006">2006</option>
+                            <option class="select__item" value="2007">2007</option>
+                            <option class="select__item" value="2008">2008</option>
+                            <option class="select__item" value="2009">2009</option>
+                            <option class="select__item" value="2010">2010</option>
+                            <option class="select__item" value="2011">2011</option>
+                            <option class="select__item" value="2012">2012</option>
+                            <option class="select__item" value="2013">2013</option>
+                            <option class="select__item" value="2014">2014</option>
+                            <option class="select__item" value="2015">2015</option>
+                            <option class="select__item" value="2016">2016</option>
+                            <option class="select__item" value="2017">2017</option>
+                            <option class="select__item" value="2018">2018</option>
+                            <option class="select__item" value="2019">2019</option>
+                            <option class="select__item" value="2020">2020</option>
+                            <option class="select__item" value="2021">2021</option>
+                            <option class="select__item" value="2022">2022</option>
+                            <option class="select__item" value="2023">2023</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__comments">
+                    <label class="form__label" for="comments">Your Comments</label>
+                    <input placeholder="Напишите комментарий…" autocomplete="off" class="form__input" type="text" id="comments" name="comments">
+                    <button class="form__btn"></button>
+                </div>
+            </form>
+            <div class="comments__colomns">
+                <div class="comments__item">
+                    <div class="comments__title">
+                        <div class="comments__name">
+                            Илья Радюк
+                        </div>
+                        <div class="comments__date">
+                            17.03.23
+                        </div>
+                        <div class="comments__like">
+                        </div>
+                        <div class="comments__remove">
+                            <img src="./img/remove.gif" alt="remove">
+                        </div>
+                    </div>
+                    <div class="comments__text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum sed libero nulla eligendi et
+                        quae, debitis cum! Ut suscipit, placeat enim obcaecati sed officiis animi, laudantium dolor
+                        minima consectetur nam, illum necessitatibus rem minus et! Maxime, tempore at nostrum assumenda
+                        dolorum fugit. Delectus deleniti quibusdam, id omnis vero dicta totam.
+                    </div>
+                </div>
+                <div class="comments__item">
+                    <div class="comments__title">
+                        <div class="comments__name">
+                            Илья Радюк
+                        </div>
+                        <div class="comments__date">
+                            17.03.23
+                        </div>
+                        <div class="comments__like">
+                        </div>
+                        <div class="comments__remove">
+                            <img src="./img/remove.gif" alt="remove">
+                        </div>
+                    </div>
+                    <div class="comments__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ipsam nam non ea accusamus
+                        porro!
+                    </div>
+                </div>
+
+                <div class="comments__item">
+                    <div class="comments__title">
+                        <div class="comments__name">
+                            Илья Радюк
+                        </div>
+                        <div class="comments__date">
+                            17.03.23
+                        </div>
+                        <div class="comments__like">
+
+                        </div>
+                        <div class="comments__remove">
+                            <img src="./img/remove.gif" alt="remove">
+                        </div>
+                    </div>
+                    <div class="comments__text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nulla ad rem deleniti,
+                        minima quo. Beatae voluptatum rerum iste ea esse velit maxime vel hic soluta ratione unde
+                        cumque, voluptate corporis ex vitae vero ad quo? Consequuntur, pariatur officia! Cumque ab
+                        excepturi, rerum culpa qui iste, in sit consequuntur iure minima suscipit ullam ut libero
+                        nesciunt, quaerat officiis animi nam. Hic, natus aspernatur? Aut ducimus consectetur saepe,
+                        deserunt nam incidunt! Ipsum aperiam alias architecto at debitis cum, vitae iusto nostrum rem
+                        aliquam nemo illum, dolorem adipisci soluta, eos dicta minus nisi natus possimus ratione eveniet
+                        quasi enim. Aut accusamus enim, magnam voluptatibus minima autem natus hic eveniet eum corrupti
+                        consequatur quaerat libero veniam nobis vero ratione velit? Ducimus iusto quam mollitia odit
+                        facilis vel iste, rerum aspernatur consectetur repellat culpa velit. Voluptates, saepe. Quod
+                        ipsum quidem tempore animi minus natus! Atque, voluptatum veritatis exercitationem modi ex id
+                        sint laboriosam cum corporis rerum distinctio sequi neque, explicabo, perspiciatis quas beatae
+                        nemo! Cumque dignissimos ex asperiores ducimus nulla, enim deserunt voluptatem eius porro
+                        voluptas vel error impedit quidem ratione. Voluptas necessitatibus atque et, praesentium alias
+                        deleniti ducimus tempora molestias accusamus iusto fugit quia est vel similique, corporis
+                        officia. Quisquam ut commodi adipisci!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+s a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.container {
+  padding: 20px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.comments {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #343B4C;
+}
+
+.comments__count {
+  padding: 20px 0px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form__label {
+  padding-bottom: 10px;
+}
+.form__input {
+  color: #343b4c;
+  font-size: 14px;
+  min-height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  width: 100%;
+  padding: 9px 19px;
+  background-color: #eff5ff;
+  border-radius: 20px;
+}
+.form__name {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+}
+.form__select-conteiner {
+  background-color: #eff5ff;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.form__select {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  color: #343b4c;
+  font-size: 14px;
+  min-height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.form__comments {
+  padding-top: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+.form__btn {
+  position: absolute;
+  bottom: 3px;
+  right: 5px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #315efb;
+}
+.form__btn::after {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 30px;
+  content: "→";
+  position: relative;
+  top: -3px;
+}
+
+.comments__colomns {
+  margin-top: 20px;
+}
+
+.comments__item {
+  padding: 10px 20px 15px 20px;
+  background-color: #eff5ff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.comments__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.comments__name {
+  font-weight: 500;
+}
+
+.comments__date {
+  color: #8D96B2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 15px;
+}
+
+.comments__like {
+  cursor: pointer;
+  position: relative;
+  width: 20px;
+  margin-right: 20px;
+}
+.comments__like::after {
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+  content: "❤";
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  -webkit-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+.comments__like:hover {
+  color: #f94e66;
+  text-shadow: 0px 0px 3px #f94e66;
+}
+
+.like-active {
+  color: #f94e66;
+}
+
+.comments__remove {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: url("./../img/remove.svg") no-repeat;
+  background-size: contain;
+}
+.comments__remove img {
+  visibility: hidden;
+}
+.comments__remove:hover {
+  background: none;
+}
+.comments__remove:hover img {
+  width: 25px;
+  height: 25px;
+  visibility: visible;
+}
+
+.error {
+  color: red;
+}
+.error::before {
+  content: "Заполните  поле";
+  position: relative;
+}
+
+.comments__text {
+  font-weight: 500;
+}
+
+@media (max-width: 528px) {
+  .form__name {
+    width: 100%;
+  }
+  .form__date {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .comments__item {
+    padding: 10px 20px 45px 20px;
+    position: relative;
+  }
+  .comments__like {
+    position: static;
+  }
+  .comments__like::after {
+    position: absolute;
+    top: unset;
+    left: unset;
+    bottom: 15px;
+    right: 60px;
+  }
+  .comments__remove {
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+  }
+}
